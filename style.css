@@ -13,6 +13,16 @@ body {
   font-family: "Bubblegum Sans", cursive;
 }
 
+body.light {
+  background-color: #fff;
+  color: mediumblue;
+}
+
+body.dark {
+  background-color: #19202c;
+  color: lime;
+}
+
 .menu {
   height: 100%;
   width: 100%;
