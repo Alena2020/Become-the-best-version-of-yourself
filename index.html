@@ -12,29 +12,155 @@
   <header class="header">
     <h1>Become the best version of yourself</h1>
     <nav id="menu">
-                    <button><a href="#to-do-list"><p>To-Do-List 📋</p></a></button>
+                    <button><a href="#to-do-list"><p>To-Do List 📋</p></a></button>
                     <button><a href="#weekly-task-tracker"><p>Weekly Task Tracker</p></a></button>
-                    <button><a href="#wish-list"><p>Wish List</p></a></button>
-                    <button><a href="#ideas"><p>Ideas</p></a></button>
-                    <button><a href="#home"><p>HOME</p></a></button>
+                    <button><a href="#wish-list"><p>Wish List ✨</p></a></button>
+                    <button><a href="#ideas"><p>Ideas 💡</p></a></button>
+                    <button><a href="#about-project"><p>About project</p></a></button>
                     <button class="button-theme" onClick="toggleTheme('light')">Light Mode ☀️</button> <button class="button-theme" onClick="toggleTheme('dark')">Dark Mode 🌙</button>
-                </nav>  
+    </nav>  
   </header>
-  <!-- /.header -->
-  <section id="home">
+  <!-- /.header -->  
+  <section id="about-project">
     <p>Everyone sees the world in one’s own way.</p>
     <p>Everyone is the creator of one’s own fate.</p>
     <p>Follow your heart.</p>
     <p>Live without regrets.</p>
     <p>Dreams come true!</p>
   </section>
-  <section id="to-do-list"></section>
-  <section id="weekly-task-tracker"></section>
-  <section id="wish-list"></section>
-  <section id="ideas"></section> 
+  <section id="to-do-list">
+    <h1>To-Do List</h1>
+    <div>
+      <input type="text" id="input-task"  placeholder="Add a new task...">
+      <button id="add-task-button" onclick="addTask()">Add task</button>
+      <button><a href="#"><p>HOME</p></a></button>
+    </div>
+    <ul id="task-list">
+      <li> 
+        <input type="checkbox">       
+        <span class="span-task">📋 task 1</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li> 
+        <input type="checkbox">       
+        <span class="span-task">📋 task 2</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li> 
+        <input type="checkbox">       
+        <span class="span-task">📋 task 3</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+    </ul>
+  </section>
+  <section id="weekly-task-tracker">
+    <h1>Weekly Task Tracker</h1>   
+    <div>
+      <input type="text" id="input-tracker"  placeholder="Add a new tracker...">
+      <button id="add-tracker-button" onclick="addTracker()">Add tracker</button>
+      <button><a href="#"><p>HOME</p></a></button>
+    </div>
+    <ul id="tracker-list">
+      <li>        
+        <span>Tracker</span>
+        <span>Monday</span>
+        <span>Tuesday</span>
+        <span>Wednes­day</span>
+        <span>Thursday</span>
+        <span>Friday</span>
+        <span>Saturday</span>
+        <span>Sunday</span>        
+      </li>
+      <li>        
+        <span class="span-tracker">Tracker1</span>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li>        
+        <span class="span-tracker">Tracker2</span>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li>        
+        <span class="span-tracker">Tracker3</span>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <button class="delete-btn">Remove</button>
+      </li>
+
+    </ul>
+  </section>
+  <section id="wish-list">
+    <h1>Wish List</h1>
+    <div>
+      <input type="text" id="input-wish"  placeholder="Add a new wish...">
+      <button id="add-wish-button" onclick="addWish()">Add wish</button>
+      <button><a href="#"><p>HOME</p></a></button>
+    </div>
+    <ul id="wish-list">
+      <li> 
+        <input type="checkbox">       
+        <span class="span-wish">✨ wish 1</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li> 
+        <input type="checkbox">       
+        <span class="span-wish">✨ wish 2</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li> 
+        <input type="checkbox">       
+        <span class="span-wish">✨ wish 3</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+
+    </ul>
+  </section>
+  <section id="ideas">
+    <h1>Ideas</h1>
+    <div>
+      <input type="text" id="input-ideas"  placeholder="Add a new idea...">
+      <button id="add-idea-button" onclick="addIdea()">Add idea</button>
+      <button><a href="#"><p>HOME</p></a></button>
+    </div>
+    <ul id="ideas-list">
+      <li> 
+        <input type="checkbox">       
+        <span class="span-idea">💡 idea 1</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li> 
+        <input type="checkbox">       
+        <span class="span-idea">💡 idea 2</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+      <li> 
+        <input type="checkbox">       
+        <span class="span-idea">💡 idea 3</span>        
+        <button class="delete-btn">Remove</button>
+      </li>
+    </ul>
+  </section> 
 
   <footer class="footer">
-
+    <h1>Alena</h1>
   </footer>
   <!-- /.footer -->
   <script src="script.js"></script>
