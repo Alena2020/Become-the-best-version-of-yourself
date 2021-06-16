@@ -13,7 +13,7 @@
     <h1>Become the best version of yourself</h1>
     <nav id="menu">
                     <button><a href="#to-do-list"><p>To-Do List 📋</p></a></button>
-                    <button><a href="#weekly-task-tracker"><p>Weekly Task Tracker</p></a></button>
+                    <button><a href="#weekly-task-tracker"><p>Weekly Task Tracker ★</p></a></button>
                     <button><a href="#wish-list"><p>Wish List ✨</p></a></button>
                     <button><a href="#ideas"><p>Ideas 💡</p></a></button>
                     <button><a href="#about-project"><p>About project</p></a></button>
@@ -38,17 +38,17 @@
     <ul id="task-list">
       <li> 
         <input type="checkbox">       
-        <span class="span-task">📋 task 1</span>        
+        <span class="span-task"> task 1</span>        
         <button class="delete-btn">Remove</button>
       </li>
       <li> 
         <input type="checkbox">       
-        <span class="span-task">📋 task 2</span>        
+        <span class="span-task"> task 2</span>        
         <button class="delete-btn">Remove</button>
       </li>
       <li> 
         <input type="checkbox">       
-        <span class="span-task">📋 task 3</span>        
+        <span class="span-task"> task 3</span>        
         <button class="delete-btn">Remove</button>
       </li>
     </ul>
@@ -60,51 +60,103 @@
       <button id="add-tracker-button" onclick="addTracker()">Add tracker</button>
       <button><a href="#"><p>HOME</p></a></button>
     </div>
-    <ul id="tracker-list">
+    <ul id="tracker-list">    
       <li>        
-        <span>Tracker</span>
-        <span>Monday</span>
-        <span>Tuesday</span>
-        <span>Wednes­day</span>
-        <span>Thursday</span>
-        <span>Friday</span>
-        <span>Saturday</span>
-        <span>Sunday</span>        
-      </li>
-      <li>        
-        <span class="span-tracker">Tracker1</span>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">        
+        <span class="span-tracker">Tracker1</span>       
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-monday" class="active" />
+          <label for="checkbox-monday">Monday</label>          
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-tuesday" />
+          <label for="checkbox-tuesday">Tuesday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-wednes­day" />
+          <label for="checkbox-wednes­day">Wednes­day</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-thursday" />
+          <label for="checkbox-thursday">Thursday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-friday" />
+          <label for="checkbox-friday">Friday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-saturday" />
+          <label for="checkbox-saturday">Saturday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-sunday" />
+          <label for="checkbox-sunday">Sunday</label>
+        </div>             
         <button class="delete-btn">Remove</button>
       </li>
       <li>        
-        <span class="span-tracker">Tracker2</span>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+        <span class="span-tracker">Tracker2</span>       
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-monday" class="active" />
+          <label for="checkbox-monday">Monday</label>          
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-tuesday" />
+          <label for="checkbox-tuesday">Tuesday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-wednes­day" />
+          <label for="checkbox-wednes­day">Wednes­day</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-thursday" />
+          <label for="checkbox-thursday">Thursday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-friday" />
+          <label for="checkbox-friday">Friday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-saturday" />
+          <label for="checkbox-saturday">Saturday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-sunday" />
+          <label for="checkbox-sunday">Sunday</label>
+        </div>             
         <button class="delete-btn">Remove</button>
       </li>
       <li>        
-        <span class="span-tracker">Tracker3</span>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+        <span class="span-tracker">Tracker3</span>       
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-monday" class="active" />
+          <label for="checkbox-monday">Monday</label>          
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-tuesday" />
+          <label for="checkbox-tuesday">Tuesday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-wednes­day" />
+          <label for="checkbox-wednes­day">Wednes­day</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-thursday" />
+          <label for="checkbox-thursday">Thursday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-friday" />
+          <label for="checkbox-friday">Friday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-saturday" />
+          <label for="checkbox-saturday">Saturday</label>
+        </div>
+        <div class="checkbox-day">
+          <input type="checkbox" id="checkbox-sunday" />
+          <label for="checkbox-sunday">Sunday</label>
+        </div>             
         <button class="delete-btn">Remove</button>
       </li>
-
     </ul>
   </section>
   <section id="wish-list">
@@ -117,17 +169,17 @@
     <ul id="wish-list">
       <li> 
         <input type="checkbox">       
-        <span class="span-wish">✨ wish 1</span>        
+        <span class="span-wish"> wish 1</span>        
         <button class="delete-btn">Remove</button>
       </li>
       <li> 
         <input type="checkbox">       
-        <span class="span-wish">✨ wish 2</span>        
+        <span class="span-wish"> wish 2</span>        
         <button class="delete-btn">Remove</button>
       </li>
       <li> 
         <input type="checkbox">       
-        <span class="span-wish">✨ wish 3</span>        
+        <span class="span-wish"> wish 3</span>        
         <button class="delete-btn">Remove</button>
       </li>
 
@@ -143,17 +195,17 @@
     <ul id="ideas-list">
       <li> 
         <input type="checkbox">       
-        <span class="span-idea">💡 idea 1</span>        
+        <span class="span-idea"> idea 1</span>        
         <button class="delete-btn">Remove</button>
       </li>
       <li> 
         <input type="checkbox">       
-        <span class="span-idea">💡 idea 2</span>        
+        <span class="span-idea"> idea 2</span>        
         <button class="delete-btn">Remove</button>
       </li>
       <li> 
         <input type="checkbox">       
-        <span class="span-idea">💡 idea 3</span>        
+        <span class="span-idea"> idea 3</span>        
         <button class="delete-btn">Remove</button>
       </li>
     </ul>

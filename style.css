@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -62,6 +64,7 @@ button {
   background-color: darkturquoise;
   box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
   color: lightskyblue;
+  cursor: pointer;
 }
 
 button:hover {
@@ -84,8 +87,10 @@ button:active {
   margin: 150px;
   display: flex;
   flex-direction: column;
-  width: max-content;
-  height: max-content;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 #input-task,
@@ -115,34 +120,94 @@ li {
   justify-content: center;
 }
 
-input[type="checkbox"] {
-  height: 40px;
-  width: 40px;
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  height: 25px;
+  width: 25px;
   margin: 0 20px;
-  border-radius: 50%;
-  -webkit-appearance: none;
-  background: darkturquoise;
-  box-shadow: 2px 2px 3px midnightblue;
-}
-input[type="checkbox"]:checked {
-  background: yellow;
-  border: 2px solid mediumspringgreen;
-  box-shadow: 5px 5px 10px magenta, 0 0 15px lightpink;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:disabled {
-  background-color: silver;
-  box-shadow: 5px 5px 10px midnightblue, 0 0 15px midnightblue inset;
+#to-do-list input[type="checkbox"]:checked {
+  box-shadow: 1px 5px 5px magenta, 1px -5px 5px cyan, 6px 0 7px cyan,
+    -5px 1px 7px magenta;
 }
 
-/* If checkbox is checked the task name should be crossed out.*/
 #task-list input:checked ~ .span-task {
-  text-decoration: line-through;
-  text-decoration-color: crimson;
-  text-decoration-style: double;
   transition: 1.1s;
+  text-shadow: 5px 5px 10px magenta, 0 0 15px lightpink, 5px -5px 10px cyan;
+}
+
+#tracker-list input[type="checkbox"] {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+#tracker-list input[type="checkbox"]:before {
+  content: "★";
+}
+
+#tracker-list input[type="checkbox"]:checked {
+  color: gold;
+  text-shadow: 3px 2px red;
+}
+
+#wish-list input[type="checkbox"] {
+  -webkit-appearance: none;
+  border-radius: 50%;
+}
+
+#wish-list input[type="checkbox"]:checked {
+  text-shadow: 5px 5px 10px gold, -5px 10px 15px mediumblue,
+    10px 10px 5px crimson;
+  background-color: midnightblue;
+  box-shadow: 5px 5px 10px gold, -5px 10px 15px mediumblue,
+    10px 10px 5px crimson, -5px -10px 15px cyan, 15px -10px 15px magenta;
+}
+
+#wish-list input[type="checkbox"]:before {
+  content: "✨";
+  font-size: 30px;
+  transition: 3.1s;
+}
+
+#wish-list input:checked ~ .span-wish {
+  transition: 1.1s;
+  text-shadow: 5px 5px 10px cyan, 0 0 15px lime;
+}
+
+#ideas-list input[type="checkbox"] {
+  -webkit-appearance: none;
+  border-radius: 50%;
+}
+
+#ideas-list input[type="checkbox"]:checked {
+  text-shadow: 5px 5px 10px gold, 10px 10px 5px crimson;
+  background-color: gold;
+  box-shadow: 5px 5px 10px gold, -5px 10px 15px yellow, 10px -5px 10px gold,
+    -10px -5px 10px gold, 10px -5px 10px gold, 0 -5px 10px gold;
+}
+
+#ideas-list input[type="checkbox"]:before {
+  content: "💡";
+  font-size: 30px;
+  transition: 3.1s;
+}
+
+#ideas-list input:checked ~ .span-idea {
+  transition: 1.1s;
+  text-shadow: 5px 5px 10px gold, 0 0 15px yellow;
+}
+
+.checkbox-day {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 10px;
+  align-items: center;
+  margin: 10px 15px;
 }
 
 span {
-  margin: 0 20px;
+  margin: 15px 20px;
 }
