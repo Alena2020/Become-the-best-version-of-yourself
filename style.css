@@ -54,7 +54,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: lightskyblue;
+  color: gold;
 }
 
 button {
@@ -63,7 +63,7 @@ button {
   border-radius: 15px;
   background-color: darkturquoise;
   box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
-  color: lightskyblue;
+  color: gold;
   cursor: pointer;
 }
 
@@ -142,6 +142,7 @@ input[type="checkbox"]:not(:checked) {
   -webkit-appearance: none;
   border-radius: 50%;
   font-size: 30px;
+  text-shadow: 2px 1px lightskyblue;
 }
 
 #tracker-list input[type="checkbox"]:before {
@@ -210,4 +211,54 @@ input[type="checkbox"]:not(:checked) {
 
 span {
   margin: 15px 20px;
+}
+
+#dream-board {
+  background: linear-gradient(45deg, rgb(17, 133, 211), rgb(28, 224, 224));
+  width: 100vh;
+  height: 150vh;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 35px midnightblue, 0 0 35px midnightblue;
+  border-radius: 5%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 133, 211, 0.657),
+    rgba(28, 224, 224, 0.664)
+  );
+  border-radius: 15%;
+  border: 1px solid rgb(39, 185, 185);
+  box-shadow: 2px 2px rgb(19, 161, 226);
+  width: 25vh;
+  height: 25vh;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 35px magenta inset, 0 0 35px magenta inset;
+}
+
+.music {
+  background: cyan;
+  width: 55vh;
+  height: 35vh;
+  margin: 30px 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
