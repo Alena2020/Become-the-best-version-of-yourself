@@ -94,7 +94,7 @@ button:active {
 }
 
 #input-task,
-#input-ideas,
+#input-idea,
 #input-wish,
 #input-tracker {
   height: 50px;
@@ -222,7 +222,8 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 5px 5px 35px midnightblue, 0 0 35px midnightblue;
+  box-shadow: 5px 5px 35px midnightblue, 0 0 35px midnightblue,
+    5px 5px 10px mediumblue, 10px 30px 45px white inset;
   border-radius: 5%;
 }
 
@@ -242,7 +243,8 @@ span {
   );
   border-radius: 15%;
   border: 1px solid rgb(39, 185, 185);
-  box-shadow: 2px 2px rgb(19, 161, 226);
+  box-shadow: 2px 2px rgb(19, 161, 226), 5px 5px 10px mediumblue,
+    10px 30px 45px white inset;
   width: 50vh;
   height: 50vh;
   margin: 20px;
@@ -260,7 +262,7 @@ textarea {
   background-color: mediumturquoise;
   border-radius: 15%;
   border: 1px solid rgb(39, 185, 185);
-  box-shadow: 2px 2px rgb(19, 161, 226);
+  box-shadow: 5px 5px 10px mediumblue, 10px 30px 45px white inset;
   width: 250px;
   height: 250px;
   padding: 15px;
@@ -272,7 +274,7 @@ textarea {
   height: 35vh;
   margin: 30px 10px;
   padding: 20px;
-  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  box-shadow: 5px 5px 10px magenta, 10px 30px 45px white inset;
   border-radius: 20%;
   display: flex;
   align-items: center;
