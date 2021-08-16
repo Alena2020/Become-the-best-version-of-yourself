@@ -215,9 +215,10 @@ span {
 
 #dream-board {
   background: linear-gradient(45deg, rgb(17, 133, 211), rgb(28, 224, 224));
-  width: 100vh;
-  height: 150vh;
-  margin: 20px;
+  width: 200vh;
+  height: 300vh;
+  margin: 30px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,6 +231,7 @@ span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 50px;
 }
 
 .card {
@@ -241,13 +243,27 @@ span {
   border-radius: 15%;
   border: 1px solid rgb(39, 185, 185);
   box-shadow: 2px 2px rgb(19, 161, 226);
-  width: 25vh;
-  height: 25vh;
-  margin: 10px;
+  width: 50vh;
+  height: 50vh;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
   box-shadow: 5px 5px 35px magenta inset, 0 0 35px magenta inset;
+}
+
+textarea {
+  background-color: mediumturquoise;
+  border-radius: 15%;
+  border: 1px solid rgb(39, 185, 185);
+  box-shadow: 2px 2px rgb(19, 161, 226);
+  width: 250px;
+  height: 250px;
+  padding: 15px;
 }
 
 .music {
