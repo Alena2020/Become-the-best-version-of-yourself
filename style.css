@@ -84,7 +84,7 @@ button:active {
 #weekly-task-tracker,
 #wish-list,
 #about-project {
-  margin: 150px;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
