@@ -5,7 +5,6 @@ let inputTracker = document.querySelector('#input-tracker');
 let weeklyTaskTracker = [
     // .. tasks tracker objects 
 ];
-const buttonCheckboxes = document.querySelectorAll('input[type="checkbox"].active');
 
 function loadLocalStorageForWeeklyTaskTracker() {
     //We will use local storage to store the weekly task tracker. The localStorage property allows saving key/value pairs right in a web browser.
@@ -93,14 +92,14 @@ function onCheckboxClicked(trackerIndex, starIndex) {
 
 
 
-function test() {
-    weeklyTaskTracker.forEach((tracker, index) => {
-        console.log(tracker.trackerName);
-        tracker.checkboxesInTracker.forEach((star) => {
-            console.log(star.name);
-        });
-    });
-}
+// function test() {
+//     weeklyTaskTracker.forEach((tracker, index) => {
+//         console.log(tracker.trackerName);
+//         tracker.checkboxesInTracker.forEach((star) => {
+//             console.log(star.name);
+//         });
+//     });
+// }
 
 
 
