@@ -44,13 +44,13 @@ function addWeeklyTaskTracker() {
 function showWeeklyTaskTracker() {
     let trackerTemplate = '';
 
-    weeklyTaskTracker.forEach(function(item, trackerIndex) {
+    weeklyTaskTracker.forEach(function(tracker, trackerIndex) {
         // Clear input weekly task tracker
         inputTracker.value = '';
 
         trackerTemplate += `
         <li>
-            <span class="span-tracker">${item.trackerName}</span>`
+            <span class="span-tracker">${tracker.trackerName}</span>`
 
         item.checkboxesInTracker.forEach((star, starIndex) => {
             trackerTemplate += `
