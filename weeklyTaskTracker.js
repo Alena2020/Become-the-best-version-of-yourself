@@ -52,7 +52,7 @@ function showWeeklyTaskTracker() {
         <li>
             <span class="span-tracker">${tracker.trackerName}</span>`
 
-        item.checkboxesInTracker.forEach((star, starIndex) => {
+        tracker.checkboxesInTracker.forEach((star, starIndex) => {
             trackerTemplate += `
             <div class="checkbox-day">
                 <input type="checkbox" onclick="onCheckboxClicked(${trackerIndex}, ${starIndex})" ${star.checked  ? 'checked' : ''} class="active" />
