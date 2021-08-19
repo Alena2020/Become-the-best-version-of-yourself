@@ -14,6 +14,7 @@ body {
   font-size: 40px;
   font-family: "Bubblegum Sans", cursive;
   color: mediumblue;
+
 }
 
 body.light {
@@ -27,7 +28,7 @@ body.dark {
 }
 
 h1 {
-  margin: 5px 50px;
+  margin: 5px;
 }
 
 .header,
@@ -44,12 +45,15 @@ h1 {
   justify-content: center;
 }
 
-.menu {
+#menu {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
-  font-size: 20px;
+  font-size: 20px;  
+  top: 110px; 
+  left: 50px;
+
 }
 
 a {
@@ -84,13 +88,14 @@ button:active {
 #weekly-task-tracker,
 #wish-list,
 #about-project {
-  margin: 50px;
+  margin: 100px 30px 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+  position: relative; 
 }
 
 #input-task,
@@ -218,13 +223,14 @@ span {
   width: 200vh;
   height: 300vh;
   margin: 30px;
-  padding: 50px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 5px 35px midnightblue, 0 0 35px midnightblue,
     5px 5px 10px mediumblue, 10px 30px 45px white inset;
   border-radius: 5%;
+  position: relative;
 }
 
 .cards {
@@ -232,7 +238,7 @@ span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 20px;  
   width: 100%;
   height: 100%;
 }
@@ -248,10 +254,11 @@ span {
   box-shadow: 2px 2px rgb(19, 161, 226), 5px 5px 10px mediumblue,
     10px 30px 45px white inset;
   width: 50vh;
-  height: 50vh;
-  margin: 20px;
+  height: 60vh;
+  margin: 15px;
   display: flex;
   flex-direction: column;
+  font-size: 5vh;
   align-items: center;
   justify-content: center;
 }
@@ -260,24 +267,25 @@ span {
   box-shadow: 5px 5px 35px magenta inset, 0 0 35px magenta inset;
 }
 
-textarea {
+textarea, .dream-output {
   background-color: mediumturquoise;
   border-radius: 15%;
   border: 1px solid rgb(39, 185, 185);
   box-shadow: 5px 5px 10px mediumblue, 10px 30px 45px white inset;
   width: 35vh;
-  height: 35vh;
+  height: 20vh;
   padding: 15px;
+  margin: 10px;
 }
 
 .music {
   background: cyan;
-  width: 55vh;
-  height: 35vh;
-  margin: 30px 10px;
+  width: 70vh;
+  height: 30vh;
+  margin: 5px 10px;
   padding: 20px;
   box-shadow: 5px 5px 10px magenta, 10px 30px 45px white inset;
-  border-radius: 20%;
+  border-radius: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
