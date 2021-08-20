@@ -74,83 +74,10 @@
   </section> 
   <section id="dream-board">
         <h2>Dream board</h2>
-    <div class="cards">
-      <div class="card">
-        <h4>Friends</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Family</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>House</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Travelling</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Hobby</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Brightness of life</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Lifestyle</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Sports</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Health</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>      
-      <div class="card">
-        <h4>Work</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Skills</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      <div class="card">
-        <h4>Finance</h4>
-        <textarea class="input-textarea" placeholder="Your dreams here"></textarea>
-        <div class="dream-output"></div>
-        <button class="save-button" onclick="updateOutput()">Save</button>
-      </div>
-      
-
-    </div>  
-    
+    <ul id="dream-list">
+        
+    </ul>
+    <button class="save-button" onclick="updateLocalStorageforDreamBoard()">Save</button>      
     <div class="music">
       <p>Music<br>
       <audio controls="controls">
@@ -158,7 +85,6 @@
       </audio>
     </div>
   </section>
-
   
   <footer class="footer">
     <h1>Alena</h1>
@@ -169,5 +95,6 @@
   <script src="weeklyTaskTracker.js"></script>
   <script src="wishList.js"></script>
   <script src="ideas.js"></script>
+  <script src="dreamBoard.js"></script>
 </body>
 </html>

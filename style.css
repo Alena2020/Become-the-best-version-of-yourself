@@ -14,7 +14,6 @@ body {
   font-size: 40px;
   font-family: "Bubblegum Sans", cursive;
   color: mediumblue;
-
 }
 
 body.light {
@@ -50,10 +49,9 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: row;
-  font-size: 20px;  
-  top: 110px; 
+  font-size: 20px;
+  top: 110px;
   left: 50px;
-
 }
 
 a {
@@ -95,7 +93,7 @@ button:active {
   justify-content: center;
   width: 100%;
   height: 100%;
-  position: relative; 
+  position: relative;
 }
 
 #input-task,
@@ -233,17 +231,17 @@ span {
   position: relative;
 }
 
-.cards {
+#dream-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 20px;  
+  margin: 20px;
   width: 100%;
   height: 100%;
 }
 
-.card {
+.card-dream {
   background: linear-gradient(
     180deg,
     rgba(17, 133, 211, 0.657),
@@ -263,19 +261,21 @@ span {
   justify-content: center;
 }
 
-.card:hover {
+.card-dream:hover {
   box-shadow: 5px 5px 35px magenta inset, 0 0 35px magenta inset;
 }
 
-textarea, .dream-output {
+.input-dream {
   background-color: mediumturquoise;
   border-radius: 15%;
   border: 1px solid rgb(39, 185, 185);
   box-shadow: 5px 5px 10px mediumblue, 10px 30px 45px white inset;
-  width: 35vh;
-  height: 20vh;
+  color: blue;
+  width: 40vh;
+  height: 40vh;
   padding: 15px;
   margin: 10px;
+  cursor: pointer;
 }
 
 .music {

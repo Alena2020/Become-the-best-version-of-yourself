@@ -9,8 +9,7 @@ let weeklyTaskTracker = [
 function loadLocalStorageForWeeklyTaskTracker() {
     //We will use local storage to store the weekly task tracker. The localStorage property allows saving key/value pairs right in a web browser.
     if (localStorage.getItem("trackers")) {
-        weeklyTaskTracker = JSON.parse(localStorage.getItem("trackers")) || [];
-        console.log(weeklyTaskTracker)
+        weeklyTaskTracker = JSON.parse(localStorage.getItem("trackers")) || [];       
         showWeeklyTaskTracker();
     }
 }
