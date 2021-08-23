@@ -17,6 +17,8 @@ let dreams = [
         {dreamName: "Finance", dreamText: ''}
 ];
 
+updateLocalStorageforDreamBoard();
+
 function loadLocalStorageForDreamBoard() {
     //We will use local storage to store the dreams. The localStorage property allows saving key/value pairs right in a web browser.
     if (localStorage.getItem("dreams")) {
