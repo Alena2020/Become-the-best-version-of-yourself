@@ -1,6 +1,6 @@
 "use strict";
 
-let inputDream = 'Your dreams here...';
+let inputDreams = 'Your dreams here...';
 let dreamList = document.querySelector('#dream-list');
 let dreams = [
         {dreamName: "Friends", dreamText: ''},
@@ -40,11 +40,24 @@ function showDreamBoard() {
 
     dreamList.innerHTML = dreamsTemplate;     
   });
+  updateLocalStorageforDreamBoard();
 }
 
 showDreamBoard();
+
+updateLocalStorageforDreamBoard();
 
 function updateLocalStorageforDreamBoard() {    
     localStorage.getItem('dreams', JSON.stringify(dreams));    
 }
 
+function updateDreams() {
+  inputDreams = document.querySelector('.input-dream');  
+  for (let index = 0; index < dreams.length; index++) {
+    //let dream = dreams[index];
+    dreams[index] = inputDreams[index];
+  }
+  updateLocalStorageforDreamBoard();
+}
+
+updateDreams();
