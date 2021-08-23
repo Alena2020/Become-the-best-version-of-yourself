@@ -17,14 +17,14 @@ let dreams = [
         {dreamName: "Finance", dreamText: ''}
 ];
 
-updateLocalStorageforDreamBoard();
-
 function loadLocalStorageForDreamBoard() {
     //We will use local storage to store the dreams. The localStorage property allows saving key/value pairs right in a web browser.
     if (localStorage.getItem("dreams")) {
-        dreams = JSON.parse(localStorage.getItem("dreams"));       
-        showDreamBoard();
+        dreams = JSON.parse(localStorage.getItem("dreams"));        
+    } else {
+        updateLocalStorageforDreamBoard();      
     }
+    showDreamBoard();
 }
 
 loadLocalStorageForDreamBoard();
@@ -42,24 +42,19 @@ function showDreamBoard() {
 
     dreamList.innerHTML = dreamsTemplate;     
   });
-  updateLocalStorageforDreamBoard();
 }
 
-showDreamBoard();
-
-updateLocalStorageforDreamBoard();
-
 function updateLocalStorageforDreamBoard() {    
-    localStorage.getItem('dreams', JSON.stringify(dreams));    
+    localStorage.setItem('dreams', JSON.stringify(dreams));    
 }
 
 function updateDreams() {
-  inputDreams = document.querySelector('.input-dream');  
+  inputDreams = document.querySelectorAll('.input-dream');  
+  
   for (let index = 0; index < dreams.length; index++) {
     //let dream = dreams[index];
-    dreams[index] = inputDreams[index];
+    dreams[index].dreamText = inputDreams[index].value;  
   }
-  updateLocalStorageforDreamBoard();
-}
 
-updateDreams();
+  updateLocalStorageforDreamBoard(); 
+}
