@@ -23,19 +23,21 @@ body.light {
 
 body.dark {
   background-color: #19202c;
-  color: lime;
+  color: mediumspringgreen;
 }
 
-h1 {
+h4 {
   margin: 5px;
 }
 
 .header,
 .footer {
   background-color: cyan;
+  height: 100%;
   width: 100%;
-  padding: 10px;
-  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  padding: 10px 20px 12px 7px;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset,
+    10px 30px 45px magenta inset, 100px 70px 95px mediumslateblue inset;
   text-shadow: 0 0 2px white, -1px -1px 0 white, -3px -3px 1px white,
     -2px -2px 2px magenta;
   display: flex;
@@ -45,6 +47,9 @@ h1 {
 }
 
 #menu {
+  background-color: mediumvioletred;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset,
+    10px 30px 45px magenta inset;
   height: 100%;
   width: 100%;
   display: flex;
@@ -52,11 +57,43 @@ h1 {
   font-size: 20px;
   top: 110px;
   left: 50px;
+  overflow: hidden;
+  margin: 2px;
+}
+
+.section-content {
+  display: none;
+  box-shadow: 5px 5px 10px midnightblue, 1px 3px 5px cyan inset,
+    10px 30px 45px magenta inset;
 }
 
 a {
   text-decoration: none;
   color: gold;
+}
+
+#menu button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: red;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  color: gold;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+#menu button:hover {
+  background-color: #ddd;
+  transition: 0.5s;
+  transform: translateY(-1px);
+}
+
+#menu button.active {
+  background-color: #ccc;
+  border-radius: 9px;
 }
 
 button {
@@ -86,7 +123,8 @@ button:active {
 #weekly-task-tracker,
 #wish-list,
 #about-project {
-  margin: 100px 30px 10px 20px;
+  margin: 5px 30px 5px 20px;
+  padding: 30px 20px 200px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +264,7 @@ span {
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 5px 35px midnightblue, 0 0 35px midnightblue,
-    5px 5px 10px mediumblue, 10px 30px 45px white inset;
+    5px 5px 10px mediumblue, 10px 30px 45px crimson inset;
   border-radius: 5%;
   position: relative;
 }
