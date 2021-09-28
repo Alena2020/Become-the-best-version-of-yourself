@@ -341,3 +341,52 @@ span {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  #input-task,
+  #input-idea,
+  #input-wish,
+  #input-tracker {
+    font-size: 10px;
+    height: 30px;
+    width: 250px;
+  }
+
+  button {
+    font-size: 10px;
+    height: 30px;
+    width: 65px;
+  }
+
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:not(:checked) {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+  }
+
+  #dream-board {
+    background: linear-gradient(45deg, rgb(17, 133, 211), rgb(28, 224, 224));
+    width: 80vh;
+    margin: 20px;
+  }
+
+  .card-dream {
+    width: 30vh;
+    height: 40vh;
+    margin: 10px;
+  }
+
+  .input-dream {
+    width: 25vh;
+    height: 30vh;
+  }
+}

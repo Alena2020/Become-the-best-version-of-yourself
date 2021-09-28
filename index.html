@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Become the best version of yourself</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
           <button class="menu-links" onclick="openSection(event, 'ideas')"><p>Ideas 💡</p></button>
           <button class="menu-links" onclick="openSection(event, 'dream-board')"><p>Dream board</p></button>
           <button class="button-theme" onClick="toggleTheme('light')">Light Mode ☀️</button> <button class="button-theme" onClick="toggleTheme('dark')">Dark Mode 🌙</button>
-          <button><a href="#"><p>HOME</p></a></button>
+          <button class="menu-links" onclick="openSection(event, 'home')" id="defaultOpen"><p>HOME</p></button>
           <button class="menu-links" onclick="openSection(event, 'about-project')" id="defaultOpen"><p>About project</p></button>
           <button class="menu-links" onclick="openSection(event, 'music-for-dreams')"><p>Music</p></button>
       </nav>   
@@ -75,7 +75,7 @@
   <section id="dream-board" class="section-content">
         <h2>Dream board</h2>
     <ul id="dream-list">
-        
+
     </ul>
     <button class="save-button" onclick="updateDreams()">Save</button>   
   </section>
@@ -89,6 +89,9 @@
       </div>      
     </div>
   </section>
+  <section id="home"  class="section-content">
+    
+  </section>
   
   <footer class="footer">
     <h4>Alena</h4>
@@ -99,6 +102,6 @@
   <script src="weeklyTaskTracker.js"></script>
   <script src="wishList.js"></script>
   <script src="ideas.js"></script>
-  <script src="dreamBoard.js"></script>
+  <script src="dreamBoard.js"></script> 
 </body>
 </html>
