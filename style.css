@@ -23,18 +23,26 @@ body.light {
 
 body.dark {
   background-color: #19202c;
-  color: mediumspringgreen;
+  color: rgb(28, 224, 224);
 }
 
 h4 {
   margin: 5px;
 }
 
+.header {
+  height: 150px;
+  width: 100%;
+}
+
+.footer {
+  height: 60px;
+  width: 100%;
+}
+
 .header,
 .footer {
   background-color: cyan;
-  height: 100%;
-  width: 100%;
   padding: 10px 20px 12px 7px;
   box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset,
     10px 30px 45px magenta inset, 100px 70px 95px mediumslateblue inset;
@@ -47,18 +55,83 @@ h4 {
 }
 
 #menu {
-  background-color: mediumvioletred;
+  background-color: inherit;
   box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset,
     10px 30px 45px magenta inset;
-  height: 100%;
+  height: 60px;
   width: 100%;
+  max-width: 1600px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   font-size: 20px;
-  top: 110px;
-  left: 50px;
   overflow: hidden;
-  margin: 2px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.burger {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(28, 224, 224);
+}
+
+.burger svg {
+  transition: 0.4s;
+}
+
+.burger.active svg {
+  transform: rotate(90deg);
+}
+
+.visible-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.visible-menu li {
+  padding: 3px;
+}
+
+.hidden-menu {
+  position: absolute;
+  right: 0;
+  top: 85px;
+  min-width: 200px;
+  padding: 10px 0;
+  transition: 0.4s;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset,
+    10px 30px 45px magenta inset;
+  background: rgb(28, 224, 224);
+}
+
+.hidden-menu.active {
+  transform: translateX(0);
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  position: fixed;
+}
+
+.hidden-menu button {
+  padding: 10px;
+  color: white;
+  box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
+  background: cyan;
+}
+
+#menu .hidden {
+  display: none;
 }
 
 .section-content {
@@ -72,9 +145,10 @@ a {
   color: gold;
 }
 
-#menu button {
+.visible-menu button {
   height: 50px;
   width: 150px;
+  min-width: 80px;
   border: none;
   border-radius: 3px;
   outline: none;
@@ -85,15 +159,16 @@ a {
   margin-left: 3px;
 }
 
-#menu button:hover {
+.visible-menu button:hover {
   background-color: #ddd;
   transition: 0.5s;
   transform: translateY(-1px);
 }
 
-#menu button.active {
+.visible-menu button.active {
   background-color: #ccc;
   border-radius: 9px;
+  color: rgb(28, 224, 224);
 }
 
 button {
@@ -107,10 +182,10 @@ button {
 }
 
 button:hover {
-  border: 7px solid midnightblue;
+  border: 3px solid midnightblue;
   box-shadow: 5px 5px 10px midnightblue, 10px 30px 45px midnightblue inset;
-  transition: 0.5s;
-  transform: translateY(-5px);
+  transition: 0.2s;
+  transform: translateY(-1px);
 }
 
 button:active {
@@ -129,7 +204,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90vw;
   height: 100%;
   position: relative;
 }
@@ -256,7 +331,7 @@ span {
 
 #dream-board {
   background: linear-gradient(45deg, rgb(17, 133, 211), rgb(28, 224, 224));
-  width: 200vh;
+  width: 90vw;
   height: 300vh;
   margin: 30px;
   padding: 10px;
@@ -267,6 +342,8 @@ span {
     5px 5px 10px mediumblue, 10px 30px 45px magenta inset;
   border-radius: 5%;
   position: relative;
+  text-shadow: 0 0 2px mediumblue, -1px -1px 0 white, -3px -3px 1px white,
+    -2px -2px 2px magenta;
 }
 
 #dream-list {
@@ -289,7 +366,7 @@ span {
   border: 1px solid rgb(39, 185, 185);
   box-shadow: 2px 2px rgb(19, 161, 226), 5px 5px 10px mediumblue,
     10px 30px 45px white inset;
-  width: 50vh;
+  width: 20vw;
   height: 60vh;
   margin: 15px;
   display: flex;
@@ -309,7 +386,7 @@ span {
   border: 1px solid rgb(39, 185, 185);
   box-shadow: 5px 5px 10px mediumblue, 10px 30px 45px white inset;
   color: blue;
-  width: 40vh;
+  width: 15vw;
   height: 40vh;
   padding: 15px;
   margin: 10px;
@@ -342,7 +419,7 @@ span {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   h2 {
     font-size: 30px;
   }
@@ -357,13 +434,19 @@ span {
   #input-tracker {
     font-size: 10px;
     height: 30px;
-    width: 250px;
+    width: 200px;
   }
 
   button {
     font-size: 10px;
     height: 30px;
     width: 65px;
+  }
+
+  .hidden-menu button {
+    font-size: 10px;
+    height: 40px;
+    width: 95px;
   }
 
   input[type="checkbox"]:checked,
@@ -375,18 +458,36 @@ span {
 
   #dream-board {
     background: linear-gradient(45deg, rgb(17, 133, 211), rgb(28, 224, 224));
-    width: 80vh;
     margin: 20px;
   }
 
   .card-dream {
-    width: 30vh;
-    height: 40vh;
+    width: 35vw;
+    height: 35vh;
     margin: 10px;
   }
 
   .input-dream {
-    width: 25vh;
+    width: 30vw;
     height: 30vh;
+  }
+
+  .hidden-menu {
+    top: 70px;
+  }
+
+  #tracker-list li {
+    flex-direction: column;
+  }
+  #tracker-list button {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  #dream-board {
+    background: linear-gradient(45deg, rgb(17, 133, 211), rgb(28, 224, 224));
+    margin: 10px;
+    height: 550vh;
   }
 }
