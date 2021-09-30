@@ -142,8 +142,8 @@ h4 {
 
 .section-content {
   display: none;
-  box-shadow: 5px 5px 10px midnightblue, 1px 3px 5px cyan inset,
-    10px 30px 45px magenta inset;
+  box-shadow: 5px 5px 15px aqua, 5px 5px 10px midnightblue,
+    1px 3px 5px cyan inset, 10px 30px 45px magenta inset;
 }
 
 a {
@@ -203,8 +203,10 @@ button:active {
 #ideas,
 #weekly-task-tracker,
 #wish-list,
-#about-project {
-  margin: 5px 30px 5px 20px;
+#about-project,
+#music-for-dreams,
+#home {
+  margin: 15px 30px 15px 20px;
   padding: 30px 20px 200px 20px;
   display: flex;
   flex-direction: column;
@@ -402,7 +404,7 @@ span {
 
 .music {
   background: mediumslateblue;
-  width: 80vw;
+  width: 60vw;
   height: 50vh;
   margin: 60px 140px 60px 140px;
   padding: 30px;
@@ -415,7 +417,7 @@ span {
 
 .music1 {
   background: mediumorchid;
-  width: 40vw;
+  width: 30vw;
   height: 25vh;
   margin: 20px 140px 20px 140px;
   padding: 10px;
@@ -424,6 +426,17 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#img-rose {
+  width: 250px;
+  height: 200px;
+}
+
+#img-lotus {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
 }
 
 @media (max-width: 760px) {
@@ -436,6 +449,16 @@ span {
 
   h4 {
     font-size: 20px;
+  }
+
+  #img-rose {
+    width: 150px;
+    height: 100px;
+  }
+
+  #img-lotus {
+    width: 150px;
+    height: 150px;
   }
 
   #input-task,
