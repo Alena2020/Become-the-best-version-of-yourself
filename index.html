@@ -13,13 +13,13 @@
     <h4>Become the best version of yourself</h4> 
       <nav id="menu"   class="nav">
         <ul class="visible-menu">
+          <li><button class="menu-links" onclick="openSection(event, 'home')"><p>HOME</p></button></li>
           <li><button class="menu-links" onclick="openSection(event, 'to-do-list')"><p>To-Do List 📋</p></button></li>
           <li><button class="menu-links" onclick="openSection(event, 'weekly-task-tracker')"><p>Weekly Task Tracker ★</p></button></li>
           <li><button class="menu-links" onclick="openSection(event, 'wish-list')"><p>Wish List ✨</p></button></li>
           <li><button class="menu-links" onclick="openSection(event, 'ideas')"><p>Ideas 💡</p></button></li>
           <li><button class="menu-links" onclick="openSection(event, 'dream-board')"><p>Dream board</p></button></li>
-          <li><button class="menu-links" onclick="openSection(event, 'about-project')" id="defaultOpen"><p>About project</p></button></li>
-          <li><button class="menu-links" onclick="openSection(event, 'home')"><p>HOME</p></button></li>
+          <li><button class="menu-links" onclick="openSection(event, 'about-project')" id="defaultOpen"><p>About project</p></button></li>          
           <li><button class="menu-links" onclick="openSection(event, 'music-for-dreams')"><p>Music</p></button></li>
           <li><button class="button-theme" onClick="toggleTheme('light')">Light Mode ☀️</button></li>
           <li><button class="button-theme" onClick="toggleTheme('dark')">Dark Mode 🌙</button></li>
@@ -36,12 +36,18 @@
   </header>
   <!-- /.header --> 
 
+  <section id="home"  class="section-content">
+    <img id="img-rose" src="img/rose.png" alt="rose">      
+  </section>
+
   <section id="about-project"  class="section-content">
     <p>Everyone sees the world in one’s own way.</p>
     <p>Everyone is the creator of one’s own fate.</p>
     <p>Follow your heart.</p>
     <p>Live without regrets.</p>
     <p>Dreams come true!</p>
+    <p>Your life is a canvas, paint it with bright colors.</p>
+    <img id="img-lotus" src="img/lotus.png" alt="lotus">
   </section>
   <section id="to-do-list" class="section-content">
     <h2>To-Do List</h2>
@@ -99,10 +105,7 @@
         </audio>
       </div>      
     </div>
-  </section>
-  <section id="home"  class="section-content">
-      
-  </section>
+  </section> 
   
   <footer class="footer">
     <h4>Alena</h4>
