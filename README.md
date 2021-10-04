@@ -20,4 +20,4 @@
 
 💡 Ideas where you can write down all your Ideas.
 
-🔮 Dream board where you can visualize dreams.
+🔮 Dream board where you can write down your dreams in different spheres of life.
